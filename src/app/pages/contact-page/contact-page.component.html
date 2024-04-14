@@ -1,0 +1,90 @@
+<div class="content-box">
+  <div class="column banner">
+    <img
+      src="../../../assets/contactanos.jpg"
+      alt="contactanos"
+      width="100%%"
+      height="100%%"
+    />
+    <div class="text-overlay">
+      <p>
+        <i class="fa-solid fa-mobile" style="color: #74c0fc"></i> 3128757069
+      </p>
+      <p>
+        <i class="fa-solid fa-envelope" style="color: #cfc1f8"></i> tecnosoft{{
+          "@"
+        }}tecnosoft.com
+      </p>
+      <p>
+        <i class="fa-solid fa-location-dot" style="color: #dc7704"></i> Calle
+        100 N°10-10 <br />
+        Medellín
+      </p>
+    </div>
+  </div>
+  <div class="column form">
+    <div class="title">Contáctanos</div>
+    <form [formGroup]="contactForm" class="example-form">
+      <mat-form-field>
+        <mat-label class="field-form">NOMBRE</mat-label>
+        <input
+          matInput
+          formControlName="name"
+          placeholder="Ingresa el nombre"
+        />
+        <mat-error *ngIf="hasErrors('name', 'required')">Ingresa tu nombre</mat-error>
+        <mat-error *ngIf="hasErrors('name', 'maxlength')">Supera la longitud permitida</mat-error>
+      </mat-form-field>
+      <br />
+      <mat-form-field class="example-full-width">
+        <mat-label>EMAIL</mat-label>
+        <input
+          type="email"
+          matInput
+          formControlName="email"
+          placeholder="email@gmail.com"
+        />
+        <mat-error *ngIf="hasErrors('email', 'required')"
+          >Ingresa tu email</mat-error
+        >
+        <mat-error *ngIf="hasErrors('email', 'email')"
+          >Ingresa un email válido</mat-error
+        >
+      </mat-form-field>
+      <br />
+      <mat-form-field class="example-full-width">
+        <mat-label>TELEFONO</mat-label>
+        <input
+          matInput
+          formControlName="phone"
+          placeholder="Ingresa tu numero de contacto"
+        />
+        <mat-error *ngIf="hasErrors('phone', 'required')"
+          >Ingresa tu número de teléfono</mat-error
+        >
+        <mat-error *ngIf="hasErrors('phone', 'pattern')"
+          >Ingresa solo números, mímino 7 máximo 10</mat-error
+        >
+      </mat-form-field>
+      <br />
+      <mat-form-field class="example-full-width">
+        <mat-label>MENSAJE</mat-label>
+        <textarea
+          matInput
+          formControlName="message"
+          placeholder="Escribe tu mensaje"
+        ></textarea>
+        <mat-error *ngIf="hasErrors('massage', 'required')"
+          >Escribe tu mensaje</mat-error
+        >
+        <mat-error *ngIf="hasErrors('message', 'maxlength')"
+          >Máximo 500 caractéres</mat-error
+        >
+      </mat-form-field>
+      <br />
+      <div class="button">
+        <button mat-flat-button>ENVIAR</button>
+      </div>
+    </form>
+  </div>
+</div>

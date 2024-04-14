@@ -1,0 +1,62 @@
+.content-box {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+}
+
+h1 {
+    font-size:60px;
+    text-align: center;
+    font-family: "Outfit", sans-serif;
+    padding: 50px;
+    color: #08084A;   
+}
+.banner {
+    position: relative;
+    display: inline-block;
+    font-size: 30px;
+}
+
+.text-overlay {
+   position: absolute;
+   top: 80%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: rgb(254, 254, 254);
+   z-index: 2;
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0e0e8dd0; /* Color de filtro azul */
+    opacity: 0.5;
+    z-index: 1;    
+}
+
+.form {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.name{
+    
+    color: rgb(110, 223, 223);
+    margin: auto;
+
+}
+
+.button{
+
+    color: #08084A;
+    
+}

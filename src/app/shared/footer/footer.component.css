@@ -1,0 +1,24 @@
+.footer {
+    display: flex; /* Utiliza flexbox para el diseño */
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: space-between; 
+    background-color: #08084A; /* Color de fondo del encabezado */
+    color: #F1F1F1; /* Color del texto */
+    padding: 20px 50px; /* Espaciado interno del encabezado */
+  }
+
+  ul{
+    list-style-type: none; /* Elimina los puntos de la lista */
+    margin-right: 50px;
+  }
+
+  .social i {
+    margin-right: 50px;
+    font-size: 30px; 
+  }
+
+  .copy{
+    font-size: 18px;
+    font-weight: 600;
+    text-align: right;
+  }

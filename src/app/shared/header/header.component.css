@@ -1,0 +1,54 @@
+header {
+    display: flex; /* Utiliza flexbox para el diseño */
+    justify-content: space-between; /* Distribuye los elementos horizontalmente */
+    align-items: center; /* Centra verticalmente los elementos */
+    background-color: #08084A; /* Color de fondo del encabezado */
+    color: #F1F1F1; /* Color del texto */
+    padding: 10px 10px; /* Espaciado interno del encabezado */
+  }
+
+  .header-box{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: #F1F1F1; /* Color de fondo de la caja */
+    color: #333; /* Color del texto de la caja */
+    padding: 5px; /* Espaciado interno de la caja */
+  }
+
+  .header-box a:hover{
+    text-decoration:none;
+    font-weight: bold;
+    color: #000000; /* Color del texto del enlace */
+  }
+  
+  /* Estilos para el logo */
+  .logo img {
+    max-height: 100px; /* Define la altura máxima del logo */
+  }
+  
+  /* Estilos para la barra de navegación */
+  nav ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el relleno predeterminado */
+  }
+  
+  /* Estilos para los elementos de la lista de navegación */
+  nav ul li {
+    display: inline; /* Muestra los elementos de la lista en línea */
+    margin-left: 30px; /* Espacio entre los elementos */
+  }
+  
+  /* Estilos para los enlaces de navegación */
+  nav ul li a {
+    color: #F1F1F1; /* Color del texto del enlace */
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+  }
+  
+  /* Estilos para los enlaces de navegación cuando se encuentran en estado de hover (sobre) */
+  nav ul li a:hover {
+    text-decoration: none; /* Subraya el texto del enlace al pasar el mouse */
+    font-weight: bold;
+    color: #EA4994; /* Color del texto del enlace */
+  }
