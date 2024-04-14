@@ -16,15 +16,20 @@ body {
   outline: 0;
 }
 
+@font-face {
+  font-family: 'Cocogoose';
+  src: url('assets/fonts/Cocogoose-Pro-Bold-trial.ttf') format('truetype');
+}
+
 .title {
-  font: normal normal bold 89px/80px PT Broken;
+  font: normal normal bold 89px/80px Cocogoose;
   letter-spacing: 0px;
   color: #08084A;
+  font-size: 300%;
   opacity: 1;
 }
 
 .mdc-text-field--filled:not(.mdc-text-field--disabled) {
-  /* background-color: yellow !important; */
   background-color: #EBEBEB 0% 0% no-repeat padding-box !important;
   opacity: 1;
 }

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { UiuxComponent } from './uiux.component';
+import { UiuxPageComponent } from './uiux-page.component';
 
 describe('UiuxComponent', () => {
-  let component: UiuxComponent;
-  let fixture: ComponentFixture<UiuxComponent>;
+  let component: UiuxPageComponent;
+  let fixture: ComponentFixture<UiuxPageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [UiuxComponent]
+      imports: [UiuxPageComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(UiuxComponent);
+    fixture = TestBed.createComponent(UiuxPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

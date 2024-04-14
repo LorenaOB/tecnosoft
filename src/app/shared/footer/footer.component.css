@@ -1,6 +1,6 @@
 .footer {
-    display: flex; /* Utiliza flexbox para el diseño */
-    align-items: center; /* Centra verticalmente los elementos */
+    /*display: flex; /* Utiliza flexbox para el diseño */
+    /* align-items: center; /* Centra verticalmente los elementos */
     justify-content: space-between; 
     background-color: #08084A; /* Color de fondo del encabezado */
     color: #F1F1F1; /* Color del texto */
