@@ -1,0 +1,30 @@
+.content-box {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+}
+
+h1 {
+    font-size:60px;
+    text-align: left;
+    font-family: "Outfit", sans-serif;
+    color: #08084A;
+    line-height: normal;   
+    font-weight: bold;
+}
+
+.content{
+    padding: 80px;
+    text-align: justify;
+    color: #08084A;  
+    font-size: 20px;
+    font-kerning: normal;
+}
+
+.banner {
+    position: relative;
+    display: inline-block;
+}
+
