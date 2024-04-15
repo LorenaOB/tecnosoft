@@ -6,7 +6,7 @@ import { RequirementsAnalysisPageComponent } from './pages/requirements-analysis
 import { UiuxPageComponent } from './pages/uiux-page/uiux-page.component';
 import { AboutUsPageComponent } from './pages/about-us-page/about-us-page.component';
 import { ServicesComponent } from './pages/services/services.component';
-import { SignInComponent } from './pages/sign-in/sign-in.component';
+import { LoginPageComponent } from './pages/login-page/login-page.component';
 
 export const routes: Routes = [
   {path: '', component: HomePageComponent },
@@ -16,6 +16,6 @@ export const routes: Routes = [
   {path: 'uiux', component: UiuxPageComponent},
   {path: 'about-us', component: AboutUsPageComponent},
   {path: 'services', component: ServicesComponent},
-  {path: 'sign-in', component: SignInComponent},
+  {path: 'login', component: LoginPageComponent},
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
