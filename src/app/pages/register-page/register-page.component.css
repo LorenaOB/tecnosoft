@@ -74,6 +74,3 @@ h1 {
     text-align: center;
 }
 
-.mdc-text-field--filled:not(.mdc-text-field--disabled){
-    background-color: aquamarine;
-}

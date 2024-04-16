@@ -29,28 +29,27 @@ header {
 
 /* Estilos para la barra de navegación */
 nav ul {
-  list-style-type: none; /* Elimina los puntos de la lista */
-  margin: 0; /* Elimina el margen predeterminado */
-  padding: 0; /* Elimina el relleno predeterminado */
+  list-style-type: none; 
+  margin: 0; 
+  padding: 0; 
 }
 
-/* Estilos para los elementos de la lista de navegación */
 nav ul li {
-  display: inline; /* Muestra los elementos de la lista en línea */
-  margin-left: 30px; /* Espacio entre los elementos */
+  display: inline;
+  margin-left: 30px;
 }
 
-/* Estilos para los enlaces de navegación */
 nav ul li a {
-  color: #f1f1f1; /* Color del texto del enlace */
-  text-decoration: none; /* Elimina el subrayado predeterminado */
+  color: #f1f1f1; 
+  text-decoration: none; 
 }
 
-/* Estilos para los enlaces de navegación cuando se encuentran en estado de hover (sobre) */
 nav ul li a:hover {
-  text-decoration: none; /* Subraya el texto del enlace al pasar el mouse */
+  text-decoration: none;
   font-weight: bold;
-  color: #ea4994; /* Color del texto del enlace */
+  color: #ea4994;
+  cursor: pointer;
+
 }
 
 .align-header {

@@ -24,16 +24,16 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           
           <li class="nav-item active">
-            <a class="nav-link" href="/home">INICIO</a>
+            <a class="nav-link" (click)="redirect('/')">INICIO</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/about-us">NOSOTROS</a>
+            <a class="nav-link" (click)="redirect('/about-us')">NOSOTROS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/services">SERVICIOS</a>
+            <a class="nav-link" (click)="redirect('/services')">SERVICIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/contact">CONTÁCTANOS</a>
+            <a class="nav-link" (click)="redirect('/contact')">CONTÁCTANOS</a>
           </li>
                   
         </ul>
