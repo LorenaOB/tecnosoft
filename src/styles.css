@@ -27,10 +27,10 @@ body {
   color: #08084A;
   font-size: 300%;
   opacity: 1;
+  line-height: 40px;
 }
 
-.mdc-text-field--filled {
-  background-color: green;
-  /* opacity: 1; */
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+  background-color: #9c0202;
 }
 

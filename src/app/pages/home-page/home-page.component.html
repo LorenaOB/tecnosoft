@@ -1,41 +1,46 @@
 <div class="banner">
-    <img
-      src="../../../assets/images/banner.jpeg"
-      alt="banner"
-      width="100%"
-      height="100%"
-    />
-    <div class="content">
-        <h2>Somos expertos en desarrollo<br>a la medida</h2>
-        <p>Creamos estrategias de desarrollo de software
-        innovadoras a través de las cuales nos posicionamos
-        como un referente en este mercado.</p>
-    </div>
-    <button type="button" class="btn btn-primary btn-custom btn-lg">Inicia Sesión</button>
+  <img src="../../../assets/images/banner.jpeg" alt="banner" width="100%" height="100%" />
+  <div class="content">
+    <h2>Somos expertos en desarrollo<br>a la medida</h2>
+    <p>Creamos estrategias de desarrollo de software
+      innovadoras a través de las cuales nos posicionamos
+      como un referente en este mercado.</p>
+  </div>
+  <button type="button" class="btn btn-primary btn-custom btn-lg" (click)="redirect('login')">Inicia Sesión</button>
 </div>
 <div class="separator"> </div>
 <div class="subtitle"> Líderes en desarrollo de software para empresas</div>
-<div class="services-grid">
-  <button class="imagen-container" onclick="irAPagina('requirements-analysis-page.component.html')">
-    <img src="../../../assets/images/analisis.jpg" alt="Analisis">
-    <div class="color"></div>
-    <div class="texto">Análisis de requerimientos</div>
-  </button>
-  <button class="imagen-container">
-    <img src="../../../assets/images/plan.jpg" alt="Planificación">
-    <div class="color"></div>
-    <div class="texto">Planificación del<br>proyecto</div>
-  </button>
-    <button class="imagen-container">
-    <img src="../../../assets/images/uiux.jpg" alt="Uiux">
-    <div class="color"></div>
-    <div class="texto">UX/UI y desarrollo del proyecto</div>
-    </button>
+<div class="container">
+  <div class="services-grid row">
+    <div class="col-md-4">
+      <button class="imagen-container" (click)="redirect('requirements')">
+        <img src="../../../assets/images/analisis.jpg" alt="Analisis">
+        <div class="color"></div>
+        <div class="texto">Análisis de requerimientos</div>
+      </button>
+    </div>
+    <div class="col-md-4">
+      <button class="imagen-container" (click)="redirect('planification')">
+        <img src="../../../assets/images/plan.jpg" alt="Planificación">
+        <div class="color"></div>
+        <div class="texto">Planificación del<br>proyecto</div>
+      </button>
+    </div>
+    <div class="col-md-4">
+      <button class="imagen-container" (click)="redirect('uiux')">
+        <img src="../../../assets/images/uiux.jpg" alt="Uiux">
+        <div class="color"></div>
+        <div class="texto">UX/UI y desarrollo del proyecto</div>
+      </button>
+    </div>
+  </div>
 </div>
 <div class="comments-grid">
   <img src="../../../assets/images/user.jpg" alt="User" class="imagen-circular">
-  <div class="subtitle2">Lo que dicen nuestros <strong> clientes...</strong></div>
-  <div class="comment">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+  <div class="subtitle2">Lo que dicen nuestros <br />
+    <p style="font-size: 150%;"><strong> clientes...</strong></p>
+  </div>
+  <div class="comment">"Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     Fusce gravida tempor dolor, a tristique lectus tempus ut."<br><br>JOHN DOE<br>Emprendedor</div>
 </div>
 <div class="separator2"> </div>

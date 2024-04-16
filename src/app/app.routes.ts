@@ -7,6 +7,9 @@ import { UiuxPageComponent } from './pages/uiux-page/uiux-page.component';
 import { AboutUsPageComponent } from './pages/about-us-page/about-us-page.component';
 import { ServicesComponent } from './pages/services/services.component';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
+import { RegisterPageComponent } from './pages/register-page/register-page.component';
+import { RememberPassPageComponent } from './pages/remember-pass-page/remember-pass-page.component';
+import { UserHomePageComponent } from './pages/user-home-page/user-home-page.component';
 
 export const routes: Routes = [
   {path: '', component: HomePageComponent },
@@ -17,5 +20,8 @@ export const routes: Routes = [
   {path: 'about-us', component: AboutUsPageComponent},
   {path: 'services', component: ServicesComponent},
   {path: 'login', component: LoginPageComponent},
+  {path: 'register', component: RegisterPageComponent},
+  {path: 'remember', component: RememberPassPageComponent},
+  {path: 'user-home', component: UserHomePageComponent},
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];

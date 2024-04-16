@@ -68,7 +68,9 @@
     display: grid;
     grid-template-columns: repeat(3, auto); /* Divide el espacio en tres columnas */
     gap: 20px; /* Espacio entre las imágenes */
-    margin: 40px 40px;
+    /* margin: 40px 40px; */
+    margin: 0;
+    width: 100%;
 }
   
 .services-grid img {
@@ -141,3 +143,8 @@
     top: 200%; /* Lo posiciona en el centro vertical */
     left: 70%;
 }  
+
+
+.col-md-4 {
+    width: 100%;
+}

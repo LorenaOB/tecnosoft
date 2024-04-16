@@ -16,7 +16,7 @@ h1 {
 .banner {
     position: relative;
     display: inline-block;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .text-overlay {
@@ -48,15 +48,32 @@ h1 {
     align-items: center;
 }
 
-.name{
+.btn-custom {
     
-    color: rgb(110, 223, 223);
-    margin: auto;
-
+    background-color:#EA4994;
+    color: white;
+    border: none;
+    border-radius: 20px
+    
 }
 
-.button{
+.btn-lg{
+    width: 200px;
+    margin-top: 60px;
+}
 
-    color: #08084A;
-    
+.btn-primary:hover {
+    background-color: #08084A;
+    border-color: none; 
+    color: white;
+}
+
+.sub {
+    color: grey;
+    font-size: smaller;
+    text-align: center;
+}
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled){
+    background-color: aquamarine;
 }

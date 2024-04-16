@@ -1,15 +1,26 @@
 <div class="content-box">
     <div class="column banner">
       <img
-        src="../../../assets/images/login.jpg"
+        src="../../../assets/images/registro.jpg"
         alt="contactanos"
         width="100%"
         height="100%"
       />
     </div>
     <div class="column form">
-      <div class="title">Inicio de sesión</div>
-      <form [formGroup]="loginForm" (ngSubmit)="register('user-home')">
+      <div class="title">Regístrate</div>
+      <form [formGroup]="registerForm" class="example-form">
+        <mat-form-field>
+            <mat-label class="field-form">NOMBRE</mat-label>
+            <input
+              matInput
+              formControlName="name"
+              placeholder="Ingresa el nombre"
+            />
+            <mat-error *ngIf="hasErrors('name', 'required')">Ingresa tu nombre</mat-error>
+            <mat-error *ngIf="hasErrors('name', 'maxlength')">Supera la longitud permitida</mat-error>
+          </mat-form-field>
+          <br />
         <mat-form-field class="example-full-width">
           <mat-label>EMAIL</mat-label>
           <input class="custom-input"
@@ -26,9 +37,7 @@
             <mat-label>CONTRASEÑA</mat-label>
             <input matInput [type]="hide ? 'password' : 'text'"
             formControlName="password"
-            placeholder="••••••••"
-            >
-
+            placeholder="••••••••">
             <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
               <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
             </button>
@@ -36,11 +45,17 @@
             <mat-error *ngIf="hasErrors('password', 'minlength')">Mínimo 8 caracteres</mat-error>
         </mat-form-field>
         <br>
-        <div class="sub" (click)="redirect('register')">¿NO TIENES CUENTA? REGÍSTRATE</div>
-        <div class="sub" (click)="redirect('remember')">¿OLVIDASTE TU CONTRASEÑA?</div>
+        <mat-form-field>
+            <mat-label>REPITE TU CONTRASEÑA</mat-label>
+            <input matInput [type]="hide ? 'password' : 'text'"
+            formControlName="confirmPassword"
+            placeholder="••••••••">
+            <mat-error *ngIf="hasErrors('confirmPassword', 'required')">Repite tu contraseña</mat-error>
+            <mat-error *ngIf="hasErrors('confirmPassword', 'minlength')">Mínimo 8 caracteres</mat-error>
+            <mat-error *ngIf="hasErrors('confirmPassword', 'minlength')">Mínimo 8 caracteres</mat-error>
+        </mat-form-field>
         <br>
-        <button type="submit" class="btn btn-primary btn-custom btn-lg">Inicia Sesión</button>
+        <button type="submit" class="btn btn-primary btn-custom btn-lg">Regístrate</button>
       </form>
     </div>
   </div>
-  

@@ -67,3 +67,8 @@
     line-height: 50px;
     color:#08084A     
 }
+
+.subtitle1:hover, .subtitle2:hover  {
+    color: #ea4994;
+    cursor: pointer;
+  }

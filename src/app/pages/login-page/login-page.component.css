@@ -1,67 +1,79 @@
 .content-box {
-    display: flex;
+  display: flex;
 }
 
 .column {
-    flex: 1;
+  flex: 1;
 }
 
 h1 {
-    font-size:60px;
-    text-align: center;
-    font-family: "Outfit", sans-serif;
-    padding: 50px;
-    color: #08084A;   
+  font-size: 60px;
+  text-align: center;
+  font-family: "Outfit", sans-serif;
+  padding: 50px;
+  color: #08084a;
 }
 .banner {
-    position: relative;
-    display: inline-block;
-    font-size: 30px;
+  position: relative;
+  display: inline-block;
+  font-size: 30px;
 }
 
 .text-overlay {
-   position: absolute;
-   top: 80%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   color: rgb(254, 254, 254);
-   z-index: 2;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(254, 254, 254);
+  z-index: 2;
 }
 
 .banner::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #0e0e8dd0; /* Color de filtro azul */
-    opacity: 0.5;
-    z-index: 1;    
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0e0e8dd0; /* Color de filtro azul */
+  opacity: 0.5;
+  z-index: 1;
 }
 
 .form {
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn-custom {
-    
-    background-color:#EA4994;
-    color: white;
-    border: none;
-    border-radius: 20px
+  background-color: #ea4994;
+  color: white;
+  border: none;
+  border-radius: 20px;
 }
 
-.btn-lg{
-    width: 200px;
+.btn-lg {
+  width: 200px;
+  margin-top: 60px;
 }
 
-.custom-input{
-    background-color: violet;
-    forced-color-adjust: black;
-    
+.btn-primary:hover {
+  background-color: #08084a;
+  border-color: none;
+  color: white;
+}
+
+.sub {
+  color: grey;
+  font-size: smaller;
+  text-align: center;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+.sub:hover {
+  color: #ea4994;
+  text-decoration: underline;
+  cursor: pointer;
 }
