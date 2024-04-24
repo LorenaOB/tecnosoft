@@ -17,8 +17,8 @@
               formControlName="name"
               placeholder="Ingresa el nombre"
             />
-            <mat-error *ngIf="hasErrors('name', 'required')">Ingresa tu nombre</mat-error>
-            <mat-error *ngIf="hasErrors('name', 'maxlength')">Supera la longitud permitida</mat-error>
+            <mat-error *ngIf="utilities.hasErrors('name', 'required', registerForm)">Ingresa tu nombre</mat-error>
+            <mat-error *ngIf="utilities.hasErrors('name', 'maxlength', registerForm)">Supera la longitud permitida</mat-error>
           </mat-form-field>
           <br />
         <mat-form-field class="example-full-width">
@@ -29,8 +29,8 @@
             formControlName="email"
             placeholder="email@gmail.com"
           />
-          <mat-error *ngIf="hasErrors('email', 'required')">Ingresa tu email</mat-error>
-          <mat-error *ngIf="hasErrors('email', 'email')">Ingresa un email válido</mat-error>
+          <mat-error *ngIf="utilities.hasErrors('email', 'required', registerForm)">Ingresa tu email</mat-error>
+          <mat-error *ngIf="utilities.hasErrors('email', 'email', registerForm)">Ingresa un email válido</mat-error>
         </mat-form-field>
         <br />
         <mat-form-field>
@@ -41,8 +41,8 @@
             <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
               <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
             </button>
-            <mat-error *ngIf="hasErrors('password', 'required')">Ingresa tu contraseña</mat-error>
-            <mat-error *ngIf="hasErrors('password', 'minlength')">Mínimo 8 caracteres</mat-error>
+            <mat-error *ngIf="utilities.hasErrors('password', 'required', registerForm)">Ingresa tu contraseña</mat-error>
+            <mat-error *ngIf="utilities.hasErrors('password', 'minlength', registerForm)">Mínimo 8 caracteres</mat-error>
         </mat-form-field>
         <br>
         <mat-form-field>
@@ -50,9 +50,9 @@
             <input matInput [type]="hide ? 'password' : 'text'"
             formControlName="confirmPassword"
             placeholder="••••••••">
-            <mat-error *ngIf="hasErrors('confirmPassword', 'required')">Repite tu contraseña</mat-error>
-            <mat-error *ngIf="hasErrors('confirmPassword', 'minlength')">Mínimo 8 caracteres</mat-error>
-            <mat-error *ngIf="hasErrors('confirmPassword', 'minlength')">Mínimo 8 caracteres</mat-error>
+            <mat-error *ngIf="utilities.hasErrors('confirmPassword', 'required', registerForm)">Repite tu contraseña</mat-error>
+            <mat-error *ngIf="utilities.hasErrors('confirmPassword', 'minlength', registerForm)">Mínimo 8 caracteres</mat-error>
+            <mat-error *ngIf="utilities.hasErrors('confirmPassword', 'minlength', registerForm)">Mínimo 8 caracteres</mat-error>
         </mat-form-field>
         <br>
         <button type="submit" class="btn btn-primary btn-custom btn-lg">Regístrate</button>

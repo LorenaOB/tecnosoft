@@ -5,10 +5,10 @@ import { Router } from '@angular/router';
   selector: 'app-services',
   standalone: true,
   imports: [],
-  templateUrl: './services.component.html',
-  styleUrl: './services.component.css'
+  templateUrl: './services-page.component.html',
+  styleUrl: './services-page.component.css'
 })
-export class ServicesComponent {
+export class ServicesPageComponent {
 
   constructor(private router: Router) { }
 

@@ -8,35 +8,30 @@
       <a class="logo navbar-brand" href="home">
         <img src="../../../assets/images/Logo.png" alt="Logo" />
       </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarHeader"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-        style="color: transparent;"
-      >
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+        style="color: transparent;">
         <i class="fas fa-bars" id="btn-navbar"></i>
       </button>
-      <div class="collapse navbar-collapse" id="navbarHeader">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          
-          <li class="nav-item active">
-            <a class="nav-link" (click)="redirect('/')">INICIO</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" (click)="redirect('/about-us')">NOSOTROS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" (click)="redirect('/services')">SERVICIOS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" (click)="redirect('/contact')">CONTÁCTANOS</a>
-          </li>
-                  
-        </ul>
+      <div class="d-flex justify-content-end">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarHeader">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <li class="nav-item active">
+              <a class="nav-link" (click)="redirect('/')">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" (click)="redirect('/about-us')">NOSOTROS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" (click)="redirect('/services')">SERVICIOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" (click)="redirect('/contact')">CONTÁCTANOS</a>
+            </li>
+
+          </ul>
+        </div>
       </div>
     </div>
   </nav>
