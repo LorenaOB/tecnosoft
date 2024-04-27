@@ -17,34 +17,10 @@ import { BreakpointObserver } from '@angular/cdk/layout';
   styleUrl: './user-home-page.component.css',
 })
 export class UserHomePageComponent {
-  @ViewChild(MatSidenav)
-  sidenav!: MatSidenav;
+  constructor(private router: Router) { }
 
-  constructor(private observer: BreakpointObserver, private router: Router) {}
-
-  ngAfterViewInit() {
-    // this.observer
-    //   .observe(['(max-width: 800px)'])
-    //   .pipe(delay(1), untilDestroyed(this))
-    //   .subscribe((res) => {
-    //     if (res.matches) {
-    //       this.sidenav.mode = 'over';
-    //       this.sidenav.close();
-    //     } else {
-    //       this.sidenav.mode = 'side';
-    //       this.sidenav.open();
-    //     }
-    //   });
-
-    // this.router.events
-    //   .pipe(
-    //     untilDestroyed(this),
-    //     filter((e) => e instanceof NavigationEnd)
-    //   )
-    //   .subscribe(() => {
-    //     if (this.sidenav.mode === 'over') {
-    //       this.sidenav.close();
-    //     }
-    //   });
+  redirect(routePage: string): void {
+    this.router.navigate(['/' + routePage]);
   }
+
 }

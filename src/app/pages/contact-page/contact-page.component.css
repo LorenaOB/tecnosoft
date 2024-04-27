@@ -55,8 +55,26 @@ h1 {
 
 }
 
-.button{
-
-    color: #08084A;
-    
-}
+.btn-custom {
+    background-color: #ea4994;
+    color: white;
+    border: none;
+    border-radius: 20px;
+  }
+  
+  .btn-lg {
+    width: 200px;
+    margin-top: 40px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #08084a;
+    border-color: none;
+    color: white;
+  }
+  
+  .center-button{
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+  }

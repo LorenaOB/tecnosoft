@@ -1,0 +1,96 @@
+<div class="content">
+    <div class="column1">
+        <div class="text-center">
+            <img src="../../../assets/images/admin.jpg" alt="Admin"/>
+            <div class="name">Jane Clark</div>
+            <div class="user">Admin</div><br>
+            <ol>
+                <li>Perfil</li>
+                <li><div class="schedule" (click)="redirect('admin-home')"><strong>Administrar usuarios</strong></div></li>
+                <li><div class="services" (click)="redirect('contact')">Gestionar Agenda</div>
+                <li><div class="registrations" (click)="redirect('/')">Gestionar inscripciones</div><br>
+                <li><div class="close" (click)="redirect('/')">Cerrar sesión</div></li>
+            </ol>
+        </div>
+    </div>
+    <div class="column2">
+        <div class="subtitle">Eventos vigentes</div>
+        <div class="container">
+            <div class="date">
+                <div class="datetext">Viernes</div>
+                <div class="datenumber">19</div>
+                <div class="datetext">Abril</div>
+            </div>
+            <div class="info">
+                <div class="eventname">Webinar sobre creación de contenido web</div><br>
+                <div class="eventinfo">Lugar: Virtual - Teams</div>
+                <div class="eventinfo">Link de acceso: Da clic aquí</div>
+                <button class="btn btn-primary1 btn-custom btn-lg">Modificar</button>&nbsp;
+                <button class="btn btn-primary1 btn-custom btn-lg">Eliminar</button>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="date">
+                <div class="datetext">Martes</div>
+                <div class="datenumber">26</div>
+                <div class="datetext">Abril</div>
+            </div>
+            <div class="info">
+                <div class="eventname">Techtalk: Tendencias del mercado de software</div><br>
+                <div class="eventinfo">Lugar: Virtual - Teams</div>
+                <div class="eventinfo">Por: Jane Clark - CEO Smart Technologies</div>
+                <button class="btn btn-primary2 btn-custom2 btn-lg">Modificar</button>&nbsp;
+                <button class="btn btn-primary2 btn-custom2 btn-lg">Eliminar</button>
+            </div>
+        </div>
+        <div class="container3">
+            <div class="date">
+                <div class="datetext">Jueves</div>
+                <div class="datenumber">02</div>
+                <div class="datetext">Mayo</div>
+            </div>
+            <div class="info">
+                <div class="eventname">Workshop DevOps: Cambiando paradigmas</div><br>
+                <div class="eventinfo">Lugar: Virtual - Teams</div>
+                <div class="eventinfo">Por: Bill Saint - CTO GenNova Industries</div>
+                <button class="btn btn-primary3 btn-custom3 btn-lg">Modificar</button>&nbsp;
+                <button class="btn btn-primary3 btn-custom3 btn-lg">Eliminar</button>
+            </div>
+        </div>
+    </div>
+    <div class="column3">
+        <div class="subtitle">Crear evento</div><br><br>
+        <form>
+            <div class="form-group">
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre del evento">
+            </div><br>
+            <div class="form-group">
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Lugar">
+            </div><br>
+            <div class="form-group">
+            <input type="text" class="form-control" placeholder="Fecha" bsDatepicker>
+            </div><br>
+            <div class="form-group">
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Encargado">
+            </div><br>
+            <div class="form-group">
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Link de acceso">
+            </div><br>
+        </form><br>
+        <form>
+            <div class="simple-text">Color de tarjeta &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" id="darkblue" name="color" value="darkblue">
+            <label for="darkblue" class="circulo azuloscuro"></label>
+
+            <input type="radio" id="pink" name="color" value="pink">
+            <label for="pink" class="circulo rosa"></label>
+
+            <input type="radio" id="lightblue" name="color" value="lightblue">
+            <label for="lightblue" class="circulo azulclaro"></label>
+            </div>
+        </form><br><br>
+        <div class="text-center">
+            <button class="btn btn-primary1 btn-custom btn-lg">Crear evento</button>
+        </div>
+    </div>
+</div>

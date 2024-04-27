@@ -23,10 +23,10 @@
     </div>
   </div>
   <div class="column form">
-    <div class="title">Contáctanos</div>
+    <div class="title">Contáctanos</div><br><br>
     <form [formGroup]="contactForm" class="example-form">
       <mat-form-field>
-        <mat-label class="field-form">NOMBRE</mat-label>
+        <mat-label class="field-form">Nombre</mat-label>
         <input
           matInput
           formControlName="name"
@@ -37,7 +37,7 @@
       </mat-form-field>
       <br />
       <mat-form-field class="example-full-width">
-        <mat-label>EMAIL</mat-label>
+        <mat-label>Email</mat-label>
         <input
           type="email"
           matInput
@@ -53,7 +53,7 @@
       </mat-form-field>
       <br />
       <mat-form-field class="example-full-width">
-        <mat-label>TELEFONO</mat-label>
+        <mat-label>Teléfono</mat-label>
         <input
           matInput
           formControlName="phone"
@@ -68,7 +68,7 @@
       </mat-form-field>
       <br />
       <mat-form-field class="example-full-width">
-        <mat-label>MENSAJE</mat-label>
+        <mat-label>Mensaje</mat-label>
         <textarea
           matInput
           formControlName="message"
@@ -82,8 +82,8 @@
         >
       </mat-form-field>
       <br />
-      <div class="button">
-        <button mat-flat-button>ENVIAR</button>
+      <div class="center-button">
+        <button type="submit" class="btn btn-primary btn-custom btn-lg">Regístrate</button>
       </div>
     </form>
   </div>

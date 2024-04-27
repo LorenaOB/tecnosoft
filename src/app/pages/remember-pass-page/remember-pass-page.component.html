@@ -9,11 +9,10 @@
     </div>
     <div class="column form">
       <div class="title">Recuerda tu<br>contraseña</div>
-      <br>
-      <br>
+      <br><br><br>
       <form [formGroup]="rememberPassForm" class="example-form">
         <mat-form-field class="example-full-width">
-          <mat-label>EMAIL</mat-label>
+          <mat-label>Email</mat-label>
           <input class="custom-input"
             type="email"
             matInput
@@ -24,7 +23,10 @@
           <mat-error *ngIf="hasErrors('email', 'email')">Ingresa un email válido</mat-error>
         </mat-form-field>
         <br>
-        <button type="button" class="btn btn-primary btn-custom btn-lg">Recordar contraseña</button>
+        <div class="center-button">
+          <button type="submit" class="btn btn-primary btn-custom btn-lg">Recordar contraseña</button>
+        </div>
       </form>
     </div>
   </div>
+

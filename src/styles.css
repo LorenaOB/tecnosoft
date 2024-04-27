@@ -31,6 +31,22 @@ body {
 }
 
 .mdc-text-field--filled:not(.mdc-text-field--disabled) {
-  background-color: #9c0202;
+  width: 500px;
+  height: 60px;
+}
+
+.bs-datepicker {
+  background-color: #bdbdf2;
+  border-radius: 10px;
+  border-width: 40px;
+  border-color: aqua;
+  padding: 10px;
+}
+.bs-datepicker-head {
+  background-color: #08084A;
+  border-radius: 10px;
+  border-width: 40px;
+  border-color: aqua;
+  padding: 10px;
 }
 

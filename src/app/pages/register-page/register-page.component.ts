@@ -54,15 +54,15 @@ export class RegisterPageComponent {
   }
 
   ngOnInit(): void {
-    this.utilitiesService.getJsonData().subscribe(
-      (response) => {
-        let datos = response;
-        console.log('Datos cargados:', datos);
-      },
-      (error) => {
-        console.error('Error al cargar los datos:', error);
-      }
-    );
+    // this.utilitiesService.getJsonData().subscribe(
+    //   (response) => {
+    //     let datos = response;
+    //     console.log('Datos cargados:', datos);
+    //   },
+    //   (error) => {
+    //     console.error('Error al cargar los datos:', error);
+    //   }
+    // );
   }
 
   hasErrors(field: string, typeError: string) {

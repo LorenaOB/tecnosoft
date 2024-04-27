@@ -73,3 +73,9 @@ h1 {
     font-size: smaller;
     text-align: center;
 }
+
+.center-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

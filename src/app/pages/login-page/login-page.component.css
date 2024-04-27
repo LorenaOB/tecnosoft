@@ -56,7 +56,7 @@ h1 {
 
 .btn-lg {
   width: 200px;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 .btn-primary:hover {
@@ -76,4 +76,10 @@ h1 {
   color: #ea4994;
   text-decoration: underline;
   cursor: pointer;
+}
+
+.center-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

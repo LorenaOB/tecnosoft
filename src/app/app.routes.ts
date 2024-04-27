@@ -10,6 +10,7 @@ import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { RegisterPageComponent } from './pages/register-page/register-page.component';
 import { RememberPassPageComponent } from './pages/remember-pass-page/remember-pass-page.component';
 import { UserHomePageComponent } from './pages/user-home-page/user-home-page.component';
+import { AdminHomeComponent } from './pages/admin-home/admin-home.component';
 
 export const routes: Routes = [
   { path: '', component: HomePageComponent },
@@ -23,5 +24,6 @@ export const routes: Routes = [
   { path: 'register', component: RegisterPageComponent },
   { path: 'remember', component: RememberPassPageComponent },
   { path: 'user-home', component: UserHomePageComponent },
+  {path: 'admin-home', component: AdminHomeComponent},
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];

@@ -1,0 +1,251 @@
+.content {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+  }
+  
+  .column1 {
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .column1 img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    border: 10px solid #08084a;
+    width: 110px;
+    height: 110px;
+    top: 200%;
+    left: 100%;
+  }
+
+  .column2{
+    display: grid;
+    justify-items: center;
+  }
+
+  .form-group{
+    display: grid;
+    justify-items: center;
+  }
+  
+  .subtitle {
+    text-align: center;
+    font-family: cocogoose;
+    font-size: 30px;
+    color: #08084a;
+    margin-top: 40px;
+  }
+    
+  .name{
+    font-size: 24px;
+    color: #08084a;
+  }
+  
+  .user{
+    font-size: 20px;
+    color: #08084a;
+    font-style: italic;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    justify-content: center;
+    background-color: #08084a;
+    border-radius: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px; 
+    height: 200px; 
+    width: 90%;
+    padding: 20px;
+  }
+  
+  .container2 {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    justify-content: center;
+    background-color: #61BDC4;
+    border-radius: 30px;
+    margin-bottom: 40px; 
+    height: 200px; 
+    width: 90%;
+    padding: 20px;
+  }
+  .container3 {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    justify-content: center;
+    background-color: #ea4994;
+    border-radius: 30px;
+    margin-bottom: 40px; 
+    height: 200px; 
+    width: 90%;
+    padding: 20px;
+  }
+  
+  .datetext{
+    color: white;
+    font-size: 25px;
+    height: 25px;
+    text-align: center;
+    position: relative; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding-right: 30px;
+    padding-left: 20px;
+    border-right: 3px solid white; 
+  
+  }
+  
+  .datenumber{
+    color: white;
+    font-size: 90px;
+    height: 80px;
+    text-align: center;
+    position: relative; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding-right: 30px;
+    padding-left: 20px;
+    border-right: 3px solid white; 
+  }
+  
+  .info {
+    padding: 10px;
+    height: 170px;
+  }
+  
+  .eventname{
+    color: white;
+    font-size: 25px;
+    line-height: 25px;
+  }
+  
+  .eventinfo{
+    color: white;
+    font-size: 14px;
+  }
+  
+  .btn-custom {
+    background-color: #ea4994;
+    color: white;
+    border: none;
+    border-radius: 20px;
+  }
+  
+  .btn-custom2 {
+    background-color: #08084a;
+    color: white;
+    border: none;
+    border-radius: 20px;
+  }
+  
+  .btn-custom3 {
+    background-color: #61BDC4;
+    color: white;
+    border: none;
+    border-radius: 20px;
+  }
+  
+  .btn-lg {
+    width: 140px;
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  
+  .btn-primary1:hover {
+    background-color: #61BDC4;
+    border-color: none;
+    color: white;
+  }
+  
+  .btn-primary2:hover {
+    background-color: #ea4994;
+    border-color: none;
+    color: white;
+  }
+  
+  .btn-primary3:hover {
+    background-color: #08084a;
+    border-color: none;
+    color: white;
+  }
+  
+  ol {
+    list-style-type: none;
+    text-align: left;
+    margin-left: 20px;
+    line-height: 40px;
+    font-size: 16px;
+  }
+  
+  .close{
+    color: red;
+  }
+  
+  .close:hover {
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .services:hover {
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .registrations:hover {
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .schedule:hover {
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .form-control{
+    background-color: #e2e6e7;
+    border-radius: 0px;
+    width: 80%;
+    color:  #08084a;
+  }
+
+  input[type="radio"] {
+    display: none;
+  }
+  
+  .circulo {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .azuloscuro {
+    background-color: #08084a;
+  }
+  
+  .rosa {
+    background-color: #ea4994;
+  }
+  
+  .azulclaro {
+    background-color: #61BDC4;
+  }
+  
+  input[type="radio"]:checked + label {
+    border: 3px solid white;
+  }
+
+  .simple-text{
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 1rem;  
+    color: #464848;
+    margin-left: 10%;
+  }

@@ -49,28 +49,32 @@ h1 {
 }
 
 .btn-custom {
-    
-    background-color:#EA4994;
+    background-color: #ea4994;
     color: white;
     border: none;
-    border-radius: 20px
-    
-}
-
-.btn-lg{
+    border-radius: 20px;
+  }
+  
+  .btn-lg {
     width: 200px;
-    margin-top: 60px;
-}
-
-.btn-primary:hover {
-    background-color: #08084A;
-    border-color: none; 
+    margin-top: 40px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #08084a;
+    border-color: none;
     color: white;
-}
+  }
 
 .sub {
     color: grey;
     font-size: smaller;
     text-align: center;
 }
+
+.center-button{
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+  }
 

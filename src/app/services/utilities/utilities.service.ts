@@ -6,11 +6,9 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class UtilitiesService {
-  private jsonUrl = 'assets/database/users.json'; // Ruta al archivo JSON
-
   constructor(private http: HttpClient) {}
 
-  getJsonData(): Observable<any> {
-    return this.http.get(this.jsonUrl);
+  getJsonData(url_: string): Observable<any> {
+    return this.http.get<any>(url_);
   }
 }

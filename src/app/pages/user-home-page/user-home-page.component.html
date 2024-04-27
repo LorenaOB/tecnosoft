@@ -1,18 +1,69 @@
 <div class="content">
     <div class="column1">
-        <img src="../../../assets/images/user.jpg" alt="User" />
+        <div class="text-center">
+            <img src="../../../assets/images/user.jpg" alt="User"/>
+            <div class="name">John Doe</div>
+            <div class="user">Cliente</div><br>
+            <ol>
+                <li>Perfil</li>
+                <li><div class="schedule" (click)="redirect('user-home')"><strong>Mi Agenda</strong></div></li>
+                <li><div class="services" (click)="redirect('contact')">Contratar servicios</div><br>
+                <li><div class="close" (click)="redirect('/')">Cerrar sesión</div></li>
+            </ol>
+        </div>
     </div>
     <div class="column2">
         <div class="subtitle">Mi Agenda</div>
         <div class="container">
             <div class="date">
-                <div class="datetext">Viernes</div><br>
-                <div class="datenumber">19</div><br>
+                <div class="datetext">Viernes</div>
+                <div class="datenumber">19</div>
                 <div class="datetext">Abril</div>
             </div>
+            <div class="info">
+                <div class="eventname">Webinar sobre creación de contenido web</div><br>
+                <div class="eventinfo">Lugar: Virtual - Teams</div>
+                <div class="eventinfo">Link de acceso: Da clic aquí</div>
+                <div class="text-center">
+                    <button class="btn btn-primary1 btn-custom btn-lg">Cancelar evento</button>
+                </div>
+            </div>
+        </div>
+        <div class="simpletext">
+            No tienes más eventos agendados
         </div>
     </div>
     <div class="column3">
         <div class="subtitle">Próximos eventos</div>
+        <div class="container2">
+            <div class="date">
+                <div class="datetext">Martes</div>
+                <div class="datenumber">26</div>
+                <div class="datetext">Abril</div>
+            </div>
+            <div class="info">
+                <div class="eventname">Techtalk: Tendencias del mercado de software</div><br>
+                <div class="eventinfo">Lugar: Virtual - Teams</div>
+                <div class="eventinfo">Por: Jane Clark - CEO Smart Technologies</div>
+                <div class="text-center">
+                    <button class="btn btn-primary2 btn-custom2 btn-lg">Inscríbete</button>
+                </div>
+            </div>
+        </div>
+        <div class="container3">
+            <div class="date">
+                <div class="datetext">Jueves</div>
+                <div class="datenumber">02</div>
+                <div class="datetext">Mayo</div>
+            </div>
+            <div class="info">
+                <div class="eventname">Workshop DevOps: Cambiando paradigmas</div><br>
+                <div class="eventinfo">Lugar: Virtual - Teams</div>
+                <div class="eventinfo">Por: Bill Saint - CTO GenNova Industries</div>
+                <div class="text-center">
+                    <button class="btn btn-primary3 btn-custom3 btn-lg">Inscríbete</button>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

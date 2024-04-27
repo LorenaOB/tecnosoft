@@ -3,14 +3,7 @@
   grid-template-columns: 1fr 2fr 2fr;
 }
 
-.column {
-  flex: 1;
-}
-
 .column1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   box-shadow: 5px 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -33,51 +26,174 @@
   margin-top: 40px;
 }
 
-.container1 {
-  background-color: #08084a;
-  padding-left: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border: none;
-  border-radius: 30px;
-  width: 80%;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  text-align: center;
+.simpletext{
+  color: #08084a;
+  font-size: 22px;
+  padding-left: 30px ;
 }
 
-.date {
-  align-items: center;
+.name{
+  font-size: 24px;
+  color: #08084a;
+}
+
+.user{
+  font-size: 20px;
+  color: #08084a;
+  font-style: italic;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 30% 70%;
   justify-content: center;
-  width: 30%;
-  text-align: center;
-
+  background-color: #08084a;
+  border-radius: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px; 
+  height: 200px; 
+  width: 90%;
+  padding: 20px;
 }
-  
 
-.datetext {
+.container2 {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  justify-content: center;
+  background-color: #61BDC4;
+  border-radius: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px; 
+  height: 200px; 
+  width: 90%;
+  padding: 20px;
+}
+.container3 {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  justify-content: center;
+  background-color: #ea4994;
+  border-radius: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px; 
+  height: 200px; 
+  width: 90%;
+  padding: 20px;
+}
+
+.datetext{
   color: white;
-  font-size: 30px;
+  font-size: 25px;
+  height: 25px;
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  position: relative; 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  padding-right: 30px;
+  padding-left: 20px;
+  border-right: 3px solid white; 
+
 }
 
-.datenumber {
+.datenumber{
   color: white;
   font-size: 90px;
-  justify-content: center;
+  height: 80px;
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  position: relative; 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  padding-right: 30px;
+  padding-left: 20px;
+  border-right: 3px solid white; 
 }
 
-.separator {
-  background-color: white;
-  width: 1%;
-  height: 100%;
-  font-size: 60px;
-
-
+.info {
+  padding: 10px;
+  height: 170px;
 }
 
+.eventname{
+  color: white;
+  font-size: 25px;
+  line-height: 25px;
+}
+
+.eventinfo{
+  color: white;
+  font-size: 14px;
+}
+
+.btn-custom {
+  background-color: #ea4994;
+  color: white;
+  border: none;
+  border-radius: 20px;
+}
+
+.btn-custom2 {
+  background-color: #08084a;
+  color: white;
+  border: none;
+  border-radius: 20px;
+}
+
+.btn-custom3 {
+  background-color: #61BDC4;
+  color: white;
+  border: none;
+  border-radius: 20px;
+}
+
+.btn-lg {
+  width: 140px;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.btn-primary1:hover {
+  background-color: #61BDC4;
+  border-color: none;
+  color: white;
+}
+
+.btn-primary2:hover {
+  background-color: #ea4994;
+  border-color: none;
+  color: white;
+}
+
+.btn-primary3:hover {
+  background-color: #08084a;
+  border-color: none;
+  color: white;
+}
+
+ol {
+  list-style-type: none;
+  text-align: left;
+  margin-left: 20px;
+  line-height: 40px;
+  font-size: 16px;
+}
+
+.close{
+  color: red;
+}
+
+.close:hover {
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.services:hover {
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.schedule:hover {
+  font-weight: 500;
+  cursor: pointer;
+}
