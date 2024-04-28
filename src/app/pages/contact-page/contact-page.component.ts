@@ -29,7 +29,6 @@ export class ContactPageComponent {
   }
 
   hasErrors(field: string, typeError: string) {
-    console.log('formulario:: ', this.contactForm.get(field))
     return this.contactForm.get(field)?.hasError(typeError) && this.contactForm.get(field)?.touched;
   }
 

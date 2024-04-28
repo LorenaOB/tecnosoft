@@ -1,0 +1,35 @@
+<div class="column1">
+    <div class="text-center">
+        <img [src]="'../../assets/images/'+nameImage" alt="Photo" />
+        <div class="name">{{ userName }}</div>
+        <div class="user">{{ userRole }}</div>
+        <br>
+        <ol>
+            <li>Perfil</li>
+            <ng-container *ngIf="this.user?.role === this.txtRoleAdmin; else clientMenu">
+                <li>
+                    <div class="schedule" (click)="redirect('users-management')"><strong>Administrar Usuarios</strong>
+                    </div>
+                </li>
+                <li>
+                    <div class="services" (click)="redirect('admin-home')">Gestionar Agenda</div>
+                </li>
+                <li>
+                    <div class="registrations" (click)="redirect('manage-registrations')">Gestionar Inscripciones</div>
+                    <br>
+                </li>
+            </ng-container>
+            <ng-template #clientMenu>
+                <li>
+                    <div class="schedule" (click)="redirect('user-home')"><strong>Mi Agenda</strong></div>
+                </li>
+                <li>
+                    <div class="services" (click)="redirect('contact')">Contratar Servicios</div>
+                </li>
+            </ng-template>
+            <li>
+                <div class="close" (click)="logout()">Cerrar sesión</div>
+            </li>
+        </ol>
+    </div>
+</div>

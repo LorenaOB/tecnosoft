@@ -1,18 +1,5 @@
 <div class="content">
-    <div class="column1">
-        <div class="text-center">
-            <img src="../../../assets/images/admin.jpg" alt="Admin"/>
-            <div class="name">Jane Clark</div>
-            <div class="user">Admin</div><br>
-            <ol>
-                <li>Perfil</li>
-                <li><div class="schedule" (click)="redirect('admin-home')"><strong>Administrar usuarios</strong></div></li>
-                <li><div class="services" (click)="redirect('contact')">Gestionar Agenda</div>
-                <li><div class="registrations" (click)="redirect('/')">Gestionar inscripciones</div><br>
-                <li><div class="close" (click)="redirect('/')">Cerrar sesión</div></li>
-            </ol>
-        </div>
-    </div>
+    <app-user-menu></app-user-menu>
     <div class="column2">
         <div class="subtitle">Eventos vigentes</div>
         <div class="container">

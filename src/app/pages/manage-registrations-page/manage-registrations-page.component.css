@@ -1,0 +1,11 @@
+.content {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.subtitle {
+  font-family: cocogoose;
+  font-size: 1em;
+  color: #08084a;
+  margin-top: 3em;
+}

@@ -1,0 +1,45 @@
+<div>
+    <div class="title">{{tittle}}</div>
+    <br />
+    <br />
+    <form [formGroup]="userForm" (ngSubmit)="manageUser()">
+        <mat-form-field class="example-full-width">
+            <mat-label>Email</mat-label>
+            <input class="custom-input" type="email" matInput formControlName="email" placeholder="email@gmail.com" />
+            <mat-error *ngIf="hasErrors('email', 'required')">Ingresa el email</mat-error>
+            <mat-error *ngIf="hasErrors('email', 'email')">Ingresa un email válido</mat-error>
+        </mat-form-field>
+        <br />
+        <mat-form-field>
+            <mat-label class="field-form">Nombre</mat-label>
+            <input matInput formControlName="name" placeholder="Ingresa el nombre" />
+            <mat-error *ngIf="hasErrors('name', 'required')">Ingresa el nombre</mat-error>
+            <mat-error *ngIf="hasErrors('name', 'maxlength')">Supera la longitud permitida</mat-error>
+        </mat-form-field>
+        <br />
+        <mat-form-field>
+            <mat-label>Rol</mat-label>
+            <mat-select formControlName="role" placeholder="Ingresa el rol">
+                <mat-option *ngFor="let role of rolesList" [value]="role.key">
+                    {{ role.value }}
+                </mat-option>
+            </mat-select>
+            <mat-error *ngIf="hasErrors('role', 'required')">Ingresa el rol</mat-error>
+        </mat-form-field>
+        <br />
+        <mat-form-field>
+            <mat-label>Estado</mat-label>
+            <mat-select formControlName="active" placeholder="Ingresa el estado">
+                <mat-option *ngFor="let status of statusList" [value]="status.key">
+                    {{ status.value }}
+                </mat-option>
+            </mat-select>
+            <mat-error *ngIf="hasErrors('active', 'required')">Ingresa el estado</mat-error>
+        </mat-form-field>
+        <br />
+        <br />
+        <div class="center-button">
+            <button type="submit" class="btn btn-primary btn-custom btn-lg">{{ txtButtom }}</button>
+        </div>
+    </form>
+</div>

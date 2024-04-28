@@ -1,17 +1,5 @@
 <div class="content">
-    <div class="column1">
-        <div class="text-center">
-            <img src="../../../assets/images/user.jpg" alt="User"/>
-            <div class="name">John Doe</div>
-            <div class="user">Cliente</div><br>
-            <ol>
-                <li>Perfil</li>
-                <li><div class="schedule" (click)="redirect('user-home')"><strong>Mi Agenda</strong></div></li>
-                <li><div class="services" (click)="redirect('contact')">Contratar servicios</div><br>
-                <li><div class="close" (click)="redirect('/')">Cerrar sesión</div></li>
-            </ol>
-        </div>
-    </div>
+    <app-user-menu></app-user-menu>
     <div class="column2">
         <div class="subtitle">Mi Agenda</div>
         <div class="container">

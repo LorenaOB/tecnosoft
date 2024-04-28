@@ -11,6 +11,8 @@ import { RegisterPageComponent } from './pages/register-page/register-page.compo
 import { RememberPassPageComponent } from './pages/remember-pass-page/remember-pass-page.component';
 import { UserHomePageComponent } from './pages/user-home-page/user-home-page.component';
 import { AdminHomeComponent } from './pages/admin-home/admin-home.component';
+import { UsersManagementComponent } from './pages/users-management/users-management.component';
+import { ManageRegistrationsPageComponent } from './pages/manage-registrations-page/manage-registrations-page.component';
 
 export const routes: Routes = [
   { path: '', component: HomePageComponent },
@@ -24,6 +26,8 @@ export const routes: Routes = [
   { path: 'register', component: RegisterPageComponent },
   { path: 'remember', component: RememberPassPageComponent },
   { path: 'user-home', component: UserHomePageComponent },
-  {path: 'admin-home', component: AdminHomeComponent},
+  { path: 'admin-home', component: AdminHomeComponent },
+  { path: 'users-management', component: UsersManagementComponent },
+  { path: 'manage-registrations', component: ManageRegistrationsPageComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];

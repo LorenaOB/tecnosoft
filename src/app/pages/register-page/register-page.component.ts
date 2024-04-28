@@ -11,7 +11,9 @@ import { MatInputModule } from '@angular/material/input';
 import { CommonModule, NgClass } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
 import { Utilities } from '../../shared/utilities';
-import { UtilitiesService } from '../../services/utilities/utilities.service';
+import { UsersService } from '../../services/users/users.service';
+import { User } from '../../model/User';
+import swal from'sweetalert2';
 
 @Component({
   selector: 'app-register-page',
@@ -36,7 +38,7 @@ export class RegisterPageComponent {
   constructor(
     private formBuilder: FormBuilder,
     public utilities: Utilities,
-    private utilitiesService: UtilitiesService
+    private usersService: UsersService
   ) {
     this.registerForm = this.formBuilder.group({
       name: [
@@ -53,24 +55,35 @@ export class RegisterPageComponent {
     });
   }
 
-  ngOnInit(): void {
-    // this.utilitiesService.getJsonData().subscribe(
-    //   (response) => {
-    //     let datos = response;
-    //     console.log('Datos cargados:', datos);
-    //   },
-    //   (error) => {
-    //     console.error('Error al cargar los datos:', error);
-    //   }
-    // );
+  ngOnInit(): void {}
+
+  registerUser() {
+    if (this.registerForm.valid) {
+      let user: User = new User();
+      user.name = this.registerForm.get('name')?.value;
+      user.email = this.registerForm.get('email')?.value;
+      user.password = this.registerForm.get('password')?.value;
+      user.role = 'client';
+
+      const result: boolean = this.usersService.createUser(user);
+
+      if (result) {
+        swal.fire('Usuario creado exitosamente!', '', 'info');
+      } else {
+        swal.fire('El usuario ya existe!', '', 'warning');
+      }
+      
+    } else {
+      swal.fire('Por favor diligencia correctamente el formulario!', '', 'error');
+    }
   }
 
   hasErrors(field: string, typeError: string) {
-    return this.utilities.hasErrors(field, typeError, this.registerForm);
+    // return this.utilities.hasErrors(field, typeError, this.registerForm);
     // console.log('formulario:: ', this.registerForm.get(field));
-    /*return (
+    return (
       this.registerForm.get(field)?.hasError(typeError) &&
       this.registerForm.get(field)?.touched
-    );*/
+    );
   }
 }

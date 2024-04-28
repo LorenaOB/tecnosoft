@@ -11,7 +11,10 @@ import { MatInputModule } from '@angular/material/input';
 import { CommonModule, NgClass } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
 import { Router } from '@angular/router';
-import { LoginService } from '../../services/login/login.service';
+import { UsersService } from '../../services/users/users.service';
+import { RolesPages } from '../../config';
+import { User } from '../../model/User';
+import swal from 'sweetalert2';
 
 @Component({
   selector: 'app-login-page',
@@ -36,7 +39,7 @@ export class LoginPageComponent {
   constructor(
     private formBuilder: FormBuilder,
     private router: Router,
-    private loginService: LoginService
+    private usersService: UsersService
   ) {
     this.loginForm = this.formBuilder.group({
       email: ['', [Validators.required, Validators.email]],
@@ -53,10 +56,32 @@ export class LoginPageComponent {
     );
   }
 
-  async register(routePage: string) {
-    //this.redirect(routePage);
-    const a =  this.loginService.validateLogin('abc@emailtest.com', '123');
-    console.log(':::: ', a)
+  async loginValidate() {
+    if (this.loginForm.valid) {
+      const user: User = this.usersService.validateCredentials(
+        this.loginForm.get('email')?.value,
+        this.loginForm.get('password')?.value
+      );
+
+      if (user?.email === undefined) {
+        swal.fire('Usuario o contraseña incorrecta!', '', 'error');
+      } else if (user.active) {
+        if (user?.role === undefined) {
+          swal.fire('El usuario no tiene un rol asignado!', '', 'warning');
+        } else {
+          this.redirect(RolesPages[user?.role]);
+        }
+      } else {
+        swal.fire('El usuario se encuentra inactivo!', '', 'warning');
+        this.usersService.endSession();
+      }
+    } else {
+      swal.fire(
+        'Por favor diligencia correctamente el formulario!',
+        '',
+        'error'
+      );
+    }
   }
 
   redirect(routePage: string): void {

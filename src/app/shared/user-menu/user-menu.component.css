@@ -1,0 +1,58 @@
+.column1 {
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.column1 img {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 50%;
+  border: 10px solid #08084a;
+  width: 110px;
+  height: 110px;
+  top: 200%;
+  left: 100%;
+}
+
+.name {
+  font-size: 24px;
+  color: #08084a;
+}
+
+.user {
+  font-size: 20px;
+  color: #08084a;
+  font-style: italic;
+}
+
+ol {
+  list-style-type: none;
+  text-align: left;
+  margin-left: 20px;
+  line-height: 40px;
+  font-size: 16px;
+}
+
+.close {
+  color: red;
+}
+
+.close:hover {
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.services:hover {
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.registrations:hover {
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.schedule:hover {
+  font-weight: 500;
+  cursor: pointer;
+}

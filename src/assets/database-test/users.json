@@ -1,14 +1,20 @@
 [
     {
         "id": 1,
-        "name": "Nenny",
-        "email": "abc@emailtest.com",
-        "password": "123"
+        "name": "Lorena Ortiz",
+        "email": "admin@tecnosoft.com",
+        "password": "12345678",
+        "role": "admin",
+        "imageUrl": "",
+        "active": true
     },
     {
         "id": 2,
-        "name": "Fabian",
-        "email": "elfabby@emailtest.com",
-        "password": "456"
+        "name": "Fabian Arias",
+        "email": "client@tecnosoft.com",
+        "password": "12345678",
+        "role": "client",
+        "imageUrl": "",
+        "active": true
     }
 ]

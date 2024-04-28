@@ -1,6 +1,7 @@
 <div class="header-box">
   <i class="fa-regular fa-user"></i>
-  <a class="login" href="login"> Inicia Sesión</a>
+  <a *ngIf="!isLoggedIn" class="login" (click)="redirect('/login')"> Inicia Sesión</a>
+  <a *ngIf="isLoggedIn" class="login" (click)="redirect(userPage)">{{ userDescription }}</a>
 </div>
 <header>
   <nav class="navbar navbar-expand-lg">

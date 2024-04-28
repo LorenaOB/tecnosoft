@@ -1,0 +1,27 @@
+<div class="content">
+    <app-user-menu></app-user-menu>
+    <div class="column2">
+        <div class="subtitle">Administrar Usuarios</div>
+        <br>
+        <br>
+        <br>
+        <table>
+            <tr class="banner">
+                <th class="horizontal-list" *ngFor="let column of displayedColumns"> {{ column }} </th>
+            </tr>
+            <tr *ngFor="let user of users">
+                <td clas="row-style">{{ user.email }}</td>
+                <td clas="row-style">{{ user.name }}</td>
+                <td clas="row-style" [style.color]="user.active ? 'green' : 'red'">{{ user.active ? 'Activo' : 'Inactivo' }}</td>
+                <td clas="row-style">{{ user.role === 'client' ? 'Cliente' : user.role.charAt(0).toUpperCase() + user.role.slice(1) }}</td>
+                <td clas="row-style">
+                    <a (click)="userManage('edit', user.email)">
+                        <i class="fa-regular fa-user">Editar</i>
+                    </a>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <div class="simple-text" (click)="userManage('add')">Agregar nuevo usuario</div>
+    </div>
+</div>

@@ -4,7 +4,7 @@
   </div>
   <div class="column form">
     <div class="title">Inicio de sesión</div><br><br>
-    <form [formGroup]="loginForm" (ngSubmit)="register('user-home')">
+    <form [formGroup]="loginForm" (ngSubmit)="loginValidate()">
       <mat-form-field class="example-full-width">
         <mat-label>Email</mat-label>
         <input class="custom-input" type="email" matInput formControlName="email" placeholder="email@gmail.com" />
