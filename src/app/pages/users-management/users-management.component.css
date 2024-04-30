@@ -24,7 +24,7 @@
 .banner {
   width: 90%;
   height: 50px;
-  /* border-radius: 20px; */
+  border-radius: 20px;
   background-color: #08084a;
   text-align: center;
 }
@@ -54,6 +54,12 @@ td {
   text-align: center;
   color: #08084a;
   font-size: 16px;
+}
+
+a{
+  text-decoration: none;
+  color: #08084a;
+  cursor: pointer;
 }
 
 .simple-text {

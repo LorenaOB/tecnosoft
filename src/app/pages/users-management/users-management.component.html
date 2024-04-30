@@ -15,8 +15,9 @@
                 <td clas="row-style" [style.color]="user.active ? 'green' : 'red'">{{ user.active ? 'Activo' : 'Inactivo' }}</td>
                 <td clas="row-style">{{ user.role === 'client' ? 'Cliente' : user.role.charAt(0).toUpperCase() + user.role.slice(1) }}</td>
                 <td clas="row-style">
-                    <a (click)="userManage('edit', user.email)">
-                        <i class="fa-regular fa-user">Editar</i>
+                    <a class="edit"(click)="userManage('edit', user.email)">
+                        <i class="fa-regular fa-pen-to-square"></i>
+                        Editar
                     </a>
                 </td>
             </tr>

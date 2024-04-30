@@ -1,0 +1,30 @@
+.title{
+    padding: 30px;
+}
+
+.example-full-width{
+    padding-left: 30px;
+}
+
+.btn-custom {
+    background-color: #ea4994;
+    color: white;
+    border: none;
+    border-radius: 20px;
+  }
+  
+  .btn-lg {
+    width: 150px;
+    margin-top: 40px;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+
+  }
+  
+  .btn-primary:hover {
+    background-color: #08084a;
+    border-color: none;
+    color: white;
+  }
+

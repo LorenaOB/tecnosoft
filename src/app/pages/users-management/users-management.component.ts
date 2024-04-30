@@ -28,7 +28,7 @@ export class UsersManagementComponent {
 
   userManage(action: string, email: string = ''){
     const dialogRef = this.dialog.open(UserFormComponent, {
-      width: '50%',
+      width: '42%',
       data: { action: action, userEmail: email }
     });
 

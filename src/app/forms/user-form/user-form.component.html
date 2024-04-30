@@ -1,7 +1,6 @@
-<div>
+<div style="border: 10px solid #08084a; border-radius: 10px">
     <div class="title">{{tittle}}</div>
-    <br />
-    <br />
+    <br /> 
     <form [formGroup]="userForm" (ngSubmit)="manageUser()">
         <mat-form-field class="example-full-width">
             <mat-label>Email</mat-label>
@@ -10,14 +9,14 @@
             <mat-error *ngIf="hasErrors('email', 'email')">Ingresa un email válido</mat-error>
         </mat-form-field>
         <br />
-        <mat-form-field>
+        <mat-form-field class="example-full-width">
             <mat-label class="field-form">Nombre</mat-label>
             <input matInput formControlName="name" placeholder="Ingresa el nombre" />
             <mat-error *ngIf="hasErrors('name', 'required')">Ingresa el nombre</mat-error>
             <mat-error *ngIf="hasErrors('name', 'maxlength')">Supera la longitud permitida</mat-error>
         </mat-form-field>
         <br />
-        <mat-form-field>
+        <mat-form-field class="example-full-width">
             <mat-label>Rol</mat-label>
             <mat-select formControlName="role" placeholder="Ingresa el rol">
                 <mat-option *ngFor="let role of rolesList" [value]="role.key">
@@ -27,7 +26,7 @@
             <mat-error *ngIf="hasErrors('role', 'required')">Ingresa el rol</mat-error>
         </mat-form-field>
         <br />
-        <mat-form-field>
+        <mat-form-field class="example-full-width">
             <mat-label>Estado</mat-label>
             <mat-select formControlName="active" placeholder="Ingresa el estado">
                 <mat-option *ngFor="let status of statusList" [value]="status.key">

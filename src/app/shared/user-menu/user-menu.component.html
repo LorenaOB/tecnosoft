@@ -8,7 +8,7 @@
             <li>Perfil</li>
             <ng-container *ngIf="this.user?.role === this.txtRoleAdmin; else clientMenu">
                 <li>
-                    <div class="schedule" (click)="redirect('users-management')"><strong>Administrar Usuarios</strong>
+                    <div class="schedule" (click)="redirect('users-management')">Administrar Usuarios
                     </div>
                 </li>
                 <li>
