@@ -1,4 +1,4 @@
-import { StringDictionary } from './interfaces/RolesPage';
+import { StringDictionary } from './interfaces/StringDictionary';
 
 export const Urls = {
   usersUrl: 'assets/database-test/users.json',

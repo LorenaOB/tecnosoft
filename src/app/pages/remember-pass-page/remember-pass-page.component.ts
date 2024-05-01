@@ -4,6 +4,7 @@ import {FormControl, Validators, FormsModule, ReactiveFormsModule, FormGroup, Fo
 import {MatInputModule} from '@angular/material/input';
 import { CommonModule, NgClass } from '@angular/common';
 import {MatIconModule} from '@angular/material/icon';
+import swal from 'sweetalert2';
 
 @Component({
   selector: 'app-remember-pass-page',
@@ -13,7 +14,7 @@ import {MatIconModule} from '@angular/material/icon';
   styleUrl: './remember-pass-page.component.css'
 })
 export class RememberPassPageComponent {
-
+ 
   rememberPassForm!: FormGroup;
   hide = true; 
 
@@ -29,6 +30,15 @@ export class RememberPassPageComponent {
 
   hasErrors(field: string, typeError: string) {
     return this.rememberPassForm.get(field)?.hasError(typeError) && this.rememberPassForm.get(field)?.touched;
+  }
+
+  rememberEvent() {
+    
+    swal.fire(
+      'Te hemos enviado un recordatorio de contraseña',
+      'Revisa tu correo electrónico',
+      'success'
+    );
   }
   
 }

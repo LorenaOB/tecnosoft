@@ -2,56 +2,57 @@
     <app-user-menu></app-user-menu>
     <div class="column2">
         <div class="subtitle">Mi Agenda</div>
-        <div class="container">
-            <div class="date">
-                <div class="datetext">Viernes</div>
-                <div class="datenumber">19</div>
-                <div class="datetext">Abril</div>
-            </div>
-            <div class="info">
-                <div class="eventname">Webinar sobre creación de contenido web</div><br>
-                <div class="eventinfo">Lugar: Virtual - Teams</div>
-                <div class="eventinfo">Link de acceso: Da clic aquí</div>
-                <div class="text-center">
-                    <button class="btn btn-primary1 btn-custom btn-lg">Cancelar evento</button>
+        <ng-container *ngFor="let event of scheduledEvents">
+            <div class="container-event" [style.background-color]="event.color">
+                <div class="date">
+                    <div class="datetext">{{ event.weekday }}</div>
+                    <div class="datenumber">{{ event.day }}</div>
+                    <div class="datetext">{{ event.month }}</div>
+                </div>
+                <div class="info">
+                    <div class="eventname">{{ event.name }}</div><br>
+                    <div class="eventinfo">{{ event.place }}</div>
+                    <div class="eventinfo">{{ event.speaker }}</div>
+                    <div class="text-center">
+                        <button class="btn btn-custom btn-lg {{ event.classButton }}"
+                            [style.background-color]="event.btnColor" (click)="cancelEvent(event.id)">
+                            Cancelar evento
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
+        </ng-container>
         <div class="simpletext">
-            No tienes más eventos agendados
+            <br><br>
+            {{ scheduledEvents.length > 0 ? 'No tienes más eventos agendados' : 'No tienes eventos agendados'}}
+            <br><br>
         </div>
     </div>
     <div class="column3">
         <div class="subtitle">Próximos eventos</div>
-        <div class="container2">
-            <div class="date">
-                <div class="datetext">Martes</div>
-                <div class="datenumber">26</div>
-                <div class="datetext">Abril</div>
-            </div>
-            <div class="info">
-                <div class="eventname">Techtalk: Tendencias del mercado de software</div><br>
-                <div class="eventinfo">Lugar: Virtual - Teams</div>
-                <div class="eventinfo">Por: Jane Clark - CEO Smart Technologies</div>
-                <div class="text-center">
-                    <button class="btn btn-primary2 btn-custom2 btn-lg">Inscríbete</button>
+        <ng-container *ngFor="let event of otherEvents">
+            <div class="container-event" [style.background-color]="event.color">
+                <div class="date">
+                    <div class="datetext">{{ event.weekday }}</div>
+                    <div class="datenumber">{{ event.day }}</div>
+                    <div class="datetext">{{ event.month }}</div>
+                </div>
+                <div class="info">
+                    <div class="eventname">{{ event.name }}</div><br>
+                    <div class="eventinfo">{{ event.place }}</div>
+                    <div class="eventinfo">{{ event.speaker }}</div>
+                    <div class="text-center">
+                        <button class="btn btn-custom btn-lg {{ event.classButton }}"
+                            [style.background-color]="event.btnColor" (click)="registerEvent(event.id)">
+                            Inscríbete
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="container3">
-            <div class="date">
-                <div class="datetext">Jueves</div>
-                <div class="datenumber">02</div>
-                <div class="datetext">Mayo</div>
-            </div>
-            <div class="info">
-                <div class="eventname">Workshop DevOps: Cambiando paradigmas</div><br>
-                <div class="eventinfo">Lugar: Virtual - Teams</div>
-                <div class="eventinfo">Por: Bill Saint - CTO GenNova Industries</div>
-                <div class="text-center">
-                    <button class="btn btn-primary3 btn-custom3 btn-lg">Inscríbete</button>
-                </div>
-            </div>
+        </ng-container>
+        <div *ngIf="otherEvents.length === 0" class="simpletext">
+            <br><br>
+            No tienes eventos vigentes para inscribirte
         </div>
     </div>
 </div>

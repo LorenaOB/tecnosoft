@@ -22,36 +22,10 @@
   color: #08084a;
 }
 
-.container {
+.container-event {
   display: grid;
   grid-template-columns: 30% 70%;
   justify-content: center;
-  background-color: #08084a;
-  border-radius: 30px;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  height: 200px;
-  width: 90%;
-  padding: 20px;
-}
-
-.container2 {
-  display: grid;
-  grid-template-columns: 30% 70%;
-  justify-content: center;
-  background-color: #61bdc4;
-  border-radius: 30px;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  height: 200px;
-  width: 90%;
-  padding: 20px;
-}
-.container3 {
-  display: grid;
-  grid-template-columns: 30% 70%;
-  justify-content: center;
-  background-color: #ea4994;
   border-radius: 30px;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -105,21 +79,6 @@
 }
 
 .btn-custom {
-  background-color: #ea4994;
-  color: white;
-  border: none;
-  border-radius: 20px;
-}
-
-.btn-custom2 {
-  background-color: #08084a;
-  color: white;
-  border: none;
-  border-radius: 20px;
-}
-
-.btn-custom3 {
-  background-color: #61bdc4;
   color: white;
   border: none;
   border-radius: 20px;
